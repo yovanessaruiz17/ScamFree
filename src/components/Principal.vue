@@ -1,10 +1,5 @@
 <template>
-  <nav>
-    <router-link to="/">ScamFree</router-link>
-    <router-link to="/Restaurantes">Restaurante</router-link>
-    <router-link to="/Bares">Bares</router-link>
-  </nav>
-  <router-view/>
+    <router-view/>
   <div class="container">
     <Navbar title="Restaurantes y Bares" color="#f00" />
     <div class="list-container">
