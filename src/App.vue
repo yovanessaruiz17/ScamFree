@@ -88,7 +88,7 @@ export default {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+  background-color: #f0dbf2;
   color: #333;
   font-size: 1.2em;
 }
@@ -96,18 +96,42 @@ export default {
 .container h2 {
   margin: 0;
   font-size: 2em;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(162, 84, 162);
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .container ul {
   margin: 10px 0 0 0;
   padding: 0;
+  background: #9c39a1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
 }
 
 .container li {
   margin: 5px 0;
   font-size: 0.8em;
-  color: #666;
+  color: #eddbed;
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: 0 5px 25px rgba(0,0, 0,.1);
+  transition: transform 0.5s;
+  border-radius: 10px;
+}
+.container li:hover{
+transform: scale(1.1);
+z-index: 100;
+background: #c903e3;
+color: #fff;
+box-shadow: 0 5px 25px rgba(0,0, 0,.2);
 }
 
 .details {

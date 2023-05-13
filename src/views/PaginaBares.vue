@@ -18,11 +18,12 @@ export default {
       bars: [
         {
           name: 'MIRADOR GASTROBAR',
+          
           description: 'Sitio web: https://l.wl.co/l?u=https%3A%2F%2Fwww.miradorgastrobar.com%2F',
           items: [
-            { name: 'Sugar Mom !', price: '$50.000' },
-            { name: 'Cataleya', price: '$34.000' },
-            { name: 'Coachella Summer', price: '$40.000' }
+            { name: 'Sugar Mom !: ', price: '$50.000' },
+            { name: 'Cataleya: ', price: '$34.000' },
+            { name: 'Coachella Summer: ', price: '$40.000' }
           ],
           phone: '+57 322 5109747',
           address: 'Cra. 7, Centro, Cartagena de Indias, Provincia de Cartagena, Bolívar'
@@ -31,9 +32,9 @@ export default {
           name: 'ALQUIMICO',
           description: 'https://alquimico.com/',
           items: [
-            { name: 'GUANÁBANAZO', price: '$35' },
-            { name: 'PALABRERO', price: '$35' },
-            { name: 'TOMOJI Mojito de la Casa', price: '$35' }
+            { name: 'GUANÁBANAZO: ', price: '$35' },
+            { name: 'PALABRERO: ', price: '$35' },
+            { name: 'TOMOJI Mojito de la Casa: ', price: '$35' }
           ],
           phone: '[+57] 316 533 19 32',
           address: 'Cl. del Colegio #34-24. Centro, Cartagena de Indias'
@@ -42,9 +43,9 @@ export default {
           name: 'PINK DOLPHIN',
           description: 'Sunday to Wednesday: 7am - 11p. Sitio web: https://linkr.bio/Pinkdolphin',
           items: [
-            { name: 'VODKA ABSOLUT Botella', price: '$390k' },
-            { name: 'AGUILA', price: '$10k' },
-            { name: 'CORONA ', price: '$15k' }
+            { name: 'VODKA ABSOLUT Botella: ', price: '$390k' },
+            { name: 'AGUILA: ', price: '$10k' },
+            { name: 'CORONA: ', price: '$15k' }
           ],
           phone: '+57 316 0249772',
           address: 'Calle 4 #1011'
@@ -59,3 +60,4 @@ export default {
   }
 };
 </script>
+
