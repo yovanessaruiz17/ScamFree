@@ -1,130 +1,60 @@
 <template>
-  <router-view/>
-<div class="container">
-  <Navbar title="Restaurantes y Bares" color="#f00" />
-  <div class="list-container">
-    <div>
-      <h2>Bares</h2>
-      <BarList :bars="bars" @select-bar="showDetails" />
-    </div>
-  </div>
-  <div class="details" v-if="selectedItem">
-    <h2>{{ selectedItem.name }}</h2>
-    <p>{{ selectedItem.description }}</p>
+  <div>
     <ul>
-      <li v-for="item in selectedItem.items" :key="item.name">
-        <strong>{{ item.name }}</strong> - {{ item.price }}
+      <li v-for="bar in bars" :key="bar.name" @click="selectBar(bar)" :class="{ active: selectedBar === bar }">
+        <h3>{{ bar.name }}</h3>
+        <p>{{ bar.description }}</p>
       </li>
     </ul>
-    <p>{{ selectedItem.phone }}</p>
-    <p>{{ selectedItem.address }}</p>
+    <div v-if="selectedBar" class="bar-details">
+      <h2>{{ selectedBar.name }}</h2>
+      <p>{{ selectedBar.description }}</p>
+      <h4>Items:</h4>
+      <ul>
+        <li v-for="item in selectedBar.items" :key="item.name">
+          <span>{{ item.name }}</span>
+          <span>{{ item.price }}</span>
+        </li>
+      </ul>
+      <p>Phone: {{ selectedBar.phone }}</p>
+      <p>Address: {{ selectedBar.address }}</p>
+    </div>
   </div>
-</div>
 </template>
-  
-  <script>
-import Navbar from './components/Navbar.vue'
-import RestaurantList from './components/RestaurantList.vue'
-import BarList from './components/BarList.vue'
 
+<script>
 export default {
-  name: 'App',
-  components: {
-    Navbar,
-    RestaurantList,
-    BarList
+  name: 'BarList',
+  props: {
+    bars: {
+      type: Array,
+      required: true
+    }
   },
   data() {
     return {
-      bars: [
-        {
-          name: 'Bar 1',
-          description: 'Descripción del bar 1',
-          items: [
-            { name: 'Cerveza 1', price: '$5' },
-            { name: 'Cerveza 2', price: '$6' },
-            { name: 'Cocktail 1', price: '$10' }
-          ],
-          phone: '1234567890',
-          address: 'Calle 3 #789'
-        },
-        {
-          name: 'Bar 2',
-          description: 'Descripción del bar 2',
-          items: [
-            { name: 'Cerveza 3', price: '$7' },
-            { name: 'Cerveza 4', price: '$8' },
-            { name: 'Cocktail 2', price: '$12' }
-          ],
-          phone: '0987654321',
-          address: 'Calle 4 #1011'
-        }
-      ],
-      selectedItem: null
-    }
+      selectedBar: null
+    };
   },
   methods: {
-    showDetails(item) {
-      this.selectedItem = item
+    selectBar(bar) {
+      this.selectedBar = bar;
     }
   }
-}
+};
 </script>
-  
-  <style>
-/* Estilos para la barra de navegación */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f00;
-  color: #fff;
-  font-size: 1.2em;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Estilos para la lista de restaurantes */
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+<style>
 li {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.2s ease;
-}
-
-li:hover {
-  background-color: #f0f0f0;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-li h3 {
-  margin: 0;
-  font-size: 1.2em;
+li.active {
+  background-color: #f0f0f0;
 }
 
-li p {
-  margin: 5px 0 0 0;
-  font-size: 0.8em;
-  color: #666;
-}
-
-/* Estilos para la sección de detalles */
-
-.details {
+.bar-details {
   margin-top: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -133,23 +63,4 @@ li p {
   color: #333;
   font-size: 1.2em;
 }
-
-.details h2 {
-  margin: 0;
-  font-size: 2em;
-  color: rgb(0, 0, 0);
-}
-
-.details ul {
-  margin: 10px 0 0 0;
-  padding: 0;
-}
-
-.details li {
-  margin: 5px 0;
-  font-size: 0.8em;
-  color: #666;
-}
 </style>
-
-  
