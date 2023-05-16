@@ -6,6 +6,12 @@
         <router-link to="/Restaurantes" class="nav-link">Restaurante</router-link>
         <router-link to="/Bares" class="nav-link">Bares</router-link>
       </div>
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+  </div>
     </nav>
     <router-view class="container" />
   </div>
@@ -159,6 +165,9 @@ box-shadow: 0 5px 25px rgba(0,0, 0,.2);
   margin: 5px 0;
   font-size: 0.8em;
   color: #666;
+}
+input{
+
 }
 </style>
 

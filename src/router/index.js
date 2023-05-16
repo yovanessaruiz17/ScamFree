@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import PaginaRestaurantes from '../views/PaginaRestaurante.vue';
 import PaginaBares from '../views/PaginaBares.vue';
+import PaginPrincipal from '@/views/PaginPrincipal.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/Restaurantes'
+    redirect: '/principal'
+  },
+  {
+    path:'/principal',
+    component:PaginPrincipal,
+    name:'ScamFree'
   },
   {
     path: '/Restaurantes',
