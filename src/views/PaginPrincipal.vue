@@ -1,44 +1,35 @@
 <template>
-    <div>
-        <h2>SCAM FREE</h2>
-        <carousel>
-            <slide>
-                <figure>
-                     <img src="../assets/Cartagen1.jpg" alt="">
-                </figure>
-            </slide>
-            <slide>
-                <figure>
-                    <img src="../assets/Cartagena2.jpg" alt="">
-                </figure>
-            </slide>
-            <slide>
-                <figure>
-                    <img src="../assets/Cartagena3.jpg" alt="">
-                </figure>
-            </slide>
-            <slide>
-                <figure>
-                    <img src="../assets/cartagena4.jpg" alt="">
-                </figure>
-            </slide>
-            <slide>
-                <figure>
-                    <img src="../assets/Cartagena5.jpg" alt="">
-                </figure>
-            </slide>
-        </carousel>
+    <div class="max-contenedor">
+        <h2>Scam free</h2>
+        <div class="image-grande">
+            <img src="../assets/Cartagena2.jpg" alt="" width="100%" height="50%" >
+        </div>    
     </div>
     
 </template>
+
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+    import{ref} from 'vue'
 export default {
-    components:{
-        Carousel,
-        Slide
-    }
+    name:"PaginPrincipal",
+    setup () {
+            const images =document.querySelector(".images")
+            const imagesCollection = document.querySelectorAll(".image")
+            const prevBtn = document.querySelector(".prev")
+            const nextBtn = document.querySelector(".next")
+
+            
+            return {
+                images
+            }
+        }
 };
 </script>
 <style>
+
+/* Images */
+.image-grande{
+    width: 10% 20%;
+    height: 10% 20%;
+}
 </style>

@@ -15,6 +15,10 @@
     </nav>
     <router-view class="container" />
   </div>
+  <footer>
+  <p>Author: las blackpink in your areas<br>
+  <a href="005coriente@example.com">005corriente@example.com</a></p>
+</footer>
 </template>
 
 <script>
@@ -167,7 +171,27 @@ box-shadow: 0 5px 25px rgba(0,0, 0,.2);
   color: #666;
 }
 input{
-
+  padding: 9px 20px;
+  border-radius: 12px;
+  border-color: #c903e3;
 }
+button{
+  border: none;
+  border-radius: 12px;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background: #9c39a1;
+  color: #eddbed;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(248, 195, 250);
+  color: white;
+}
+
 </style>
 

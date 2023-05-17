@@ -17,6 +17,7 @@ export default {
       restaurants: [
         {
           name: 'Brasa y Barril',
+          image:'../assets/restaurante1.jpg',
           description: 'Sitio web: http://brasaybarril.com/',
           items: [
             { name: 'Crema de Pollo', price: '$15.000' },
@@ -28,6 +29,7 @@ export default {
         },
         {
           name: 'San Valentin',
+          image:'../assets/SanValentinCartagena.jpg',
           description: 'http://www.sanvalentinrestaurantebar.com/menudiasemana.html',
           items: [
             { name: 'Pechuga en salsa de champiñones', price: '$30.000' },
