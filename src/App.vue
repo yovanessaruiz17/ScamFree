@@ -29,14 +29,13 @@ export default {
 
 <style>
 /* Estilos para la barra de navegación */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(rgb(45, 7, 116), rgb(145, 87, 226));
-  color: #fff;
+  background: linear-gradient(rgb(39, 4, 195), rgb(251, 251, 251));
+  color: #757070;
 }
 
 .logo {
@@ -94,11 +93,11 @@ export default {
 }
 
 .container {
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 5px;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #f0dbf2;
+  background-color: #ffffff;
   color: #333;
   font-size: 1.2em;
 }
@@ -186,10 +185,17 @@ button{
   background: #9c39a1;
   color: #eddbed;
 }
+button:hover{
+transform: scale(1.1);
+z-index: 100;
+background: #9b0dad;
+color: #fff;
+box-shadow: 0 5px 25px rgba(0,0, 0,.2);
+}
 footer {
   text-align: center;
   padding: 3px;
-  background-color: rgb(248, 195, 250);
+  background-color: rgb(211, 210, 223);
   color: white;
 }
 

@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import PaginaRestaurantes from '../views/PaginaRestaurante.vue';
 import PaginaBares from '../views/PaginaBares.vue';
 import PaginPrincipal from '@/views/PaginPrincipal.vue';
+import PaginaCuriosidades from '../views/PaginaCuriosidades.vue'
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: '/Bares',
     component: PaginaBares,
     name: 'Bares'
+  },
+  {
+    path:'/Curiosidades',
+    component: PaginaCuriosidades,
+    name:'Curiosidades'
   }
 ];
 
