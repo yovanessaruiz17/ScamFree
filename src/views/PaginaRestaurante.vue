@@ -49,6 +49,15 @@ export default {
           ],
           phone: '+57 310 622 1662',
           address: 'Centro Calle Larga Cl. 25 #8b-159 Cartagena Colombia'
+        },
+        {
+          name: 'FRITOS',
+          description: 'Disfruta de los mejores fritos que tiene la ciudad',
+          items: [
+            { name: 'Arepa de huevo', price: '$40.000' },
+            { name: 'Deditos', price: '$33.000' },
+            { name: 'Empanadas', price: '$42.000' }
+          ]
         }
       ]
     };

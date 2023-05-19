@@ -6,6 +6,7 @@
         <p>{{ restaurant.description }}</p>
       </li>
     </ul>
+    
     <div v-if="selectedRestaurant" class="restaurant-details">
       <h2>{{ selectedRestaurant.name }}</h2>
       <p>{{ selectedRestaurant.description }}</p>
