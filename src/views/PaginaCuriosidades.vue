@@ -58,8 +58,9 @@
                 <img src="../assets/comida.jpg" alt="Avatar" style="width:100%">
                 <div class="container">
                     <h4><b>Conoce la comida mas consumida en la ciudad</b></h4>
-                    <p>Architect & Engineer</p>
-
+                    <div class="boton">
+                        <router-link to="/Fritos" class="button">Que se te antoja?</router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +69,7 @@
 <script>
 </script>
 <style>
-.centrado3{
+.centrado3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,34 +78,69 @@
     font: oblique bold 400% cursive;
     text-align: center;
 }
-.centrado4{
+
+.centrado4 {
     position: absolute;
     top: 80%;
-    left: 60%;
-    transform: translate(-80%, -80%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-family:cursive;
+    font-family: cursive;
     font-size: 150%;
-    text-align:center;
+    text-align: center;
 }
-.tarjetas{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display:flex;
-    padding: 10px;
-    flex-wrap:nowrap;
-    flex-direction: initial;
-    max-width: 300px;
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
     margin: auto;
     text-align: center;
 }
 
-.tarjetas.card{
-    border: 1px solid gray;
-    padding: -5px;
-    margin: -2px;
-    width: 302px;
-    height: 400px;
+.tarjetas .card {
+    border: 0;
+    padding: 10px;
 }
 
+.tarjetas .card img {
+    width: 100%;
+}
+.tarjetas .card .card-content {
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.tarjetas .card h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tarjetas .card p {
+    margin: 10px 0;
+}
+@media (max-width: 768px) {
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.button{
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    background: #9c39a1;
+    color: #eddbed;
+}
+.button:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    background: #9b0dad;
+    color: #fff;
+    box-shadow: 0 5px 25px rgba(0,0, 0,.2);
+}
 </style>

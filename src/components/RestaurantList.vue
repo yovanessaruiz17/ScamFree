@@ -8,7 +8,10 @@
     </ul>
     
     <div v-if="selectedRestaurant" class="restaurant-details">
-      <h2>{{ selectedRestaurant.name }}</h2>
+      <figure>
+        <img src="selectedRestaurant.image" >
+      </figure>
+      <h2>{{ selectedRestaurant.name }}</h2>    
       <p>{{ selectedRestaurant.description }}</p>
       <h4>Items:</h4>
       <ul>

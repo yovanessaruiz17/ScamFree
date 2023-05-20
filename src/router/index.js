@@ -3,6 +3,7 @@ import PaginaRestaurantes from '../views/PaginaRestaurante.vue';
 import PaginaBares from '../views/PaginaBares.vue';
 import PaginPrincipal from '@/views/PaginPrincipal.vue';
 import PaginaCuriosidades from '../views/PaginaCuriosidades.vue'
+import Fritos from '../views/Fritos.vue'
 
 const routes = [
   {
@@ -28,6 +29,11 @@ const routes = [
     path:'/Curiosidades',
     component: PaginaCuriosidades,
     name:'Curiosidades'
+  },
+  {
+    path: '/Fritos',
+    name: 'Descripcion',
+    component: () => import('../views/Fritos.vue')
   }
 ];
 
