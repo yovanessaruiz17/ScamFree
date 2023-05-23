@@ -8,6 +8,9 @@
     </ul>
     <div v-if="selectedBar" class="bar-details">
       <h2>{{ selectedBar.name }}</h2>
+      <figure>
+        <img :src="selectedBar.image" >
+      </figure>
       <p>{{ selectedBar.description }}</p>
       <h4>Items:</h4>
       <ul>

@@ -9,7 +9,7 @@
     
     <div v-if="selectedRestaurant" class="restaurant-details">
       <figure>
-        <img src="selectedRestaurant.image" >
+        <img :src="selectedRestaurant.image" >
       </figure>
       <h2>{{ selectedRestaurant.name }}</h2>    
       <p>{{ selectedRestaurant.description }}</p>

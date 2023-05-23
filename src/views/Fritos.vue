@@ -1,32 +1,74 @@
 <template>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic dolorem libero a sapiente quos sequi, ex voluptate ab odio! Quaerat vel aperiam aliquid, sunt quas asperiores aspernatur illum iure!</p>
-        <div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-content">
-        <p class="title is-4">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
-      </div>
-    </div>
-
-    <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
-      <br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-    </div>
-  </div>
-</div>
+    <div class="granContenedor">
+        <p class="texto">La comida típica de Cartagena, Colombia, es una fusión de sabores africanos, indígenas y españoles. Destaca por su variedad de platos de mariscos, arroces y guisos. Algunos de los platos emblemáticos incluyen el arroz con coco, un arroz cremoso cocinado en leche de coco con pescado o mariscos, y el sancocho de pescado, un guiso reconfortante preparado con pescado fresco y vegetales. También son populares el ceviche de camarón, el arroz con mariscos y las arepas de huevo. En cuanto a los postres, destacan el arroz con leche, el cocada y los buñuelos. La comida cartagenera refleja la diversidad cultural de la ciudad y ofrece una experiencia culinaria tropical y sabrosa.</p>
+        <div class="tarjetas">
+            <div class="card">
+                <img src="../assets/ArepadeHuevo.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>La Señora Arepa de Huevo</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/empanada.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>La Señora empanada</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/carimañola.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>La Señora Carimañola</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/buñuelos.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>Los señores buñuelos</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/arrozMarinero.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>El Señor Arroz Marinero</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/tamal.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>El Señor Tamal</b></h2>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <img src="../assets/ArrozCocoPez.jpg" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h2><b>El Señor Arroz con Coco y Mojarra Frita</b></h2>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>
+
 </script>
 <style>
+.granContenedor{
+    background:linear-gradient(rgb(48, 196, 255), rgb(255, 199, 59)) ;
+}
+.texto{
+    text-align: center;
+    font-family: cursive;
+    font-size:20px;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    
+}
 </style>

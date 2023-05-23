@@ -18,7 +18,7 @@ export default {
       bars: [
         {
           name: 'MIRADOR GASTROBAR',
-          
+          image: 'https://www.miradorgastrobar.com/wp-content/uploads/2022/12/terraza.jpg',
           description: 'Sitio web: https://l.wl.co/l?u=https%3A%2F%2Fwww.miradorgastrobar.com%2F',
           items: [
             { name: 'Sugar Mom !: ', price: '$50.000' },
@@ -30,6 +30,7 @@ export default {
         },
         {
           name: 'ALQUIMICO',
+          image:'https://media-cdn.tripadvisor.com/media/photo-s/0d/9e/a7/f8/alquimico-cartagena.jpg',
           description: 'https://alquimico.com/',
           items: [
             { name: 'GUANÁBANAZO: ', price: '$35' },
@@ -41,6 +42,7 @@ export default {
         },
         {
           name: 'PINK DOLPHIN',
+          image:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/49/13/1d/pink-dolphin.jpg?w=600&h=400&s=1',
           description: 'Sunday to Wednesday: 7am - 11p. Sitio web: https://linkr.bio/Pinkdolphin',
           items: [
             { name: 'VODKA ABSOLUT Botella: ', price: '$390k' },
